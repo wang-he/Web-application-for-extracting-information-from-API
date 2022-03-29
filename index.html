@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-primary">Get User</h1>
+        <p>Enter the Pin here to Get User: </p>
+        <form method="post" action="/get-user">
+        <input class="form-control" type="text" placeholder="Pin" name="pin">
+        <button class="btn btn-primary mt-3" type="submit">Click here</button>
+        </form> 
+    </div>
+
+    <div class="container">
+        <h1 class="text-danger">Delete User</h1>
+        <p>Enter the Pin here to Delete: </p>
+        <form method="post" action="/del-user">
+        <input class="form-control" type="text" placeholder="Pin" name="pin">
+        <button class="btn btn-danger mt-3" type="submit">Click here</button>
+        </form> 
+    </div>
+
+    <div class="container">
+        <h1 class="text-infor">Add User</h1>
+        <p>Enter the Data here to Add the User: </p>
+        <form method="post" action="/add-user">
+        <textarea class="form-control" type="text" placeholder="Data" name="data" rows=10></textarea>
+        <button class="btn btn-info mt-3" type="submit">Click here</button>
+        </form> 
+    </div>
+
+    <!-- All the script tags will go here -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
